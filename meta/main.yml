@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  # Change to your Firstname Lastname
   author: AUTHORNAME
   description: Ansible role does ...
   role_name: ROLENAME
@@ -16,4 +17,21 @@ galaxy_info:
   galaxy_tags:
     - todo
 dependencies: []
+  # Dependency from Git repo
+  - name: example
+    src: https://github.com/almaops/template-ansible-role.git
+    version: d88e886c46658561e27b624bfa70e32d6058a25c
+    when: use_example
+  # Dependency from Galaxy
+  - role: almaops.vars
+  # Running same role with multiple params
+  - role: duplicate_role
+    param: a
+  - role: duplicate_role
+    param: b
+  # Conditional dependency
+  - role: debian_specific
+    when: ansible_os_family == 'Debian'
+  - role: variable_specific
+    when: some_var == 3
 ...

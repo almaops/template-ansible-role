@@ -1,3 +1,9 @@
+# Checklist for repo created from template
+* Change ROLENAME across all text files in your repository
+* Change AUTHORNAME to your "Firstname Lastname" in meta
+* Define role dependencies in meta
+* Remove this section, once you created a repo
+
 # almaops.ROLENAME
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
@@ -23,3 +29,4 @@ None
 [MIT](./LICENSE)
 
 # Contributors
+[Firstname Lastname](https://github.com/_)
